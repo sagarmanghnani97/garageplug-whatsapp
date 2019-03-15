@@ -7,12 +7,11 @@
 
   "content_scripts": [
     {
-      "js": ["content.js"],
-      "matches": ["https://*/*"]
-    },
-    {
         "js":["content2.js"],
         "matches": ["https://web.whatsapp.com/*"]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
 }
